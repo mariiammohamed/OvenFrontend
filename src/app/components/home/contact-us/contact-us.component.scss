@@ -1,0 +1,68 @@
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  h1 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 40px;
+    color: #105341;
+  }
+  p {
+    color: #263238;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #d2fff3;
+    width: 842px;
+    height: 462px;
+    background-color: #d2fff3;
+    border-radius: 30px;
+    .data{
+      width:70%;
+      input {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 30px;
+        height: 72px;
+        font-size: 22px;
+        text-transform: capitalize;
+        color: #848484;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 20px;
+        padding: 24px;
+      }
+      small{
+        color:red;
+        margin-left: 20px;
+      }
+    }
+
+  }
+  button {
+    background-color: #105341;
+    width: 624px;
+    height: 71px;
+    border-radius: 30px;
+    border: 1px solid #105341;
+    font-size: 26px;
+    color: white;
+  }
+  button:hover {
+    background-color: #198064;
+    border: 1px solid #198064;
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,26 @@
+<div class="navigation">
+  <div class="left-nav">
+    <span>SweetBake.</span>
+  </div>
+<nav class="center-nav">
+  <ul>
+    <a>
+
+    <li class="nav-home btn" routerLink="/">Home</li>
+    </a>
+    <li>About</li>
+    <li>Contact us</li>
+  </ul>
+</nav>
+<div class="right-nav">
+  <ul>
+
+    <i class="bi bi-search"></i>
+    <i class="bi bi-person"></i>
+    <!-- <li> <i class="bi bi-bag"></i> Cart: 4</li> -->
+    <a routerLink="cart">
+      <i class="bi bi-bag"></i> Cart: {{  totalQuantity}}
+    </a>
+  </ul>
+</div>
+</div>

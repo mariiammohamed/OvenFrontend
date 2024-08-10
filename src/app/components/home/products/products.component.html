@@ -1,0 +1,29 @@
+<div class="our-products">
+  <div class="head-products">
+    <div></div>
+    <h2>Our Products</h2>
+    <button class="btn-show">Show all   <i class="bi bi-arrow-right"></i></button>
+  </div>
+  <div class="cards">
+
+    <div class="card" *ngFor="let product of products | slice:0:3">
+      <!-- <img [src]=" product.image ? product.image : '../../../../assets/images/cor.png'" alt="product" Width="296px" Height="234px"> -->
+      <img src="../../../../assets/images/cor.png" alt="product" Width="296px" Height="234px">
+      <div class="product">
+        <span class="product_name">{{ product.name}}</span>
+        <div class="product-details">
+          <span>{{ product.price |egpFormat}}</span>
+
+
+          <div class="quantity">
+            <button (click)="decrease(product)">-</button>
+            <span>{{ getCounter(product.id) | async }}</span>
+            <button (click)="increase(product)">+</button>
+          </div>
+
+        </div>
+        <button class="product_cart" (click)="addToCart(product)"> <i class="bi bi-bag-dash"></i> Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

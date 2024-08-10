@@ -1,0 +1,30 @@
+<div class="contactUs">
+  <h1>Contact Us</h1>
+
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+  <form [formGroup]="contactUs " (ngSubmit)="submitGroup()">
+
+    <div class="data">
+      <input type="text" placeholder="name" formControlName="name">
+      <div *ngIf="name?.invalid && name?.touched">
+        <small *ngIf="name?.errors?.['required']">Name is required</small>
+      </div>
+    </div>
+    <div class="data">
+      <input type="email" placeholder="Email" formControlName="email">
+
+      <div *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+        <small *ngIf="email?.errors?.['required']">Email is required.</small>
+        <small *ngIf="email?.errors?.['email']">Email must be a valid email address.</small>
+      </div>
+    </div>
+    <div class="data">
+      <input type="text" placeholder="Message" formControlName="message">
+    </div>
+
+    <button type="submit" [disabled]="contactUs.invalid">Submit</button>
+  </form>
+
+</div>
+

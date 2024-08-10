@@ -1,0 +1,67 @@
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contactUs h1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 40px;
+  color: #105341;
+}
+.contactUs p {
+  color: #263238;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+}
+.contactUs form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #d2fff3;
+  width: 842px;
+  height: 462px;
+  background-color: #d2fff3;
+  border-radius: 30px;
+}
+.contactUs form .data {
+  width: 70%;
+}
+.contactUs form .data input {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 72px;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #848484;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  padding: 24px;
+}
+.contactUs form .data small {
+  color: red;
+  margin-left: 20px;
+}
+.contactUs button {
+  background-color: #105341;
+  width: 624px;
+  height: 71px;
+  border-radius: 30px;
+  border: 1px solid #105341;
+  font-size: 26px;
+  color: white;
+}
+.contactUs button:hover {
+  background-color: #198064;
+  border: 1px solid #198064;
+}
+.contactUs button:disabled {
+  cursor: not-allowed;
+}/*# sourceMappingURL=contact-us.component.css.map */
